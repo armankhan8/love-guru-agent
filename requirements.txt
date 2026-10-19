@@ -1,2 +1,5 @@
 openai-agents
 python-dotenv
+gradio==6.5.1
+openai-agents
+python-dotenv
