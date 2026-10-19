@@ -195,4 +195,8 @@ with gr.Blocks() as demo:
     )
 
 if __name__ == "__main__":
-    demo.queue(max_size=10).launch()
+    demo.queue(max_size=10).launch(
+        server_name="0.0.0.0",
+        server_port=int(os.getenv("PORT", "10000")),
+        ssr_mode=False
+    )
